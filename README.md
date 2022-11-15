@@ -1,3 +1,3 @@
 # portefolioV2
 
-(PORTEFOLIO)[https://devilersvincent.netlify.app/]
+[PORTEFOLIO](https://devilersvincent.netlify.app/)

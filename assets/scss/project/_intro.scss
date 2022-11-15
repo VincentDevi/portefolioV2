@@ -1,0 +1,49 @@
+.intro{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title{   
+        color: $orange-color;
+        margin-bottom: 1rem;
+    }
+    &__text{
+        width: 80%;
+        text-align: justify;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    &__arrow{
+        position: relative;
+        cursor: pointer;
+        filter: drop-shadow(22px -15px 5px rgba(0, 0, 0, 0.5));
+        animation: pulse 1s linear infinite;
+            &__impact{
+            transform: translateY(-45px) rotate(90deg);
+        }
+            &__vertical{
+                height: 100px;
+                width: 10px;
+                background-color: $blue-color;
+                border: solid 2.5px $blue-color;
+                transform: rotate(00deg);
+            }
+            &__left{
+                background-color: $blue-color;
+                height: 50px;
+                width: 10px;
+                border: solid 2px $blue-color;
+                transform: translateX(-20px) translateY(10px) rotate(-45deg);
+            }
+            &__right{
+                background-color: $blue-color;
+                height: 50px;
+                width: 10px;
+                border: solid 2px $blue-color;
+                transform: translateX(-20px) translateY(-10px) rotate(-315deg);
+            }
+    }
+}

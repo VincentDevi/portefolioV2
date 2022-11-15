@@ -1,0 +1,187 @@
+@import "_homeAnimation.scss";
+@import "_softSkills.scss";
+@import "_hardSkills.scss";
+.home{    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    &__title{
+        height: 15%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__me{
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            &__name-coffee{
+                display: flex;
+                animation: slideinLeft;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+                &__name{
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+                    color: $white-color;
+                }
+                &__coffee{
+                    &__image{
+                        height: auto;
+                        width: 35px;
+                    }
+                }
+            }
+            
+            &__occupation{
+                overflow: hidden;
+                color: $orange-color;
+                align-self: flex-end;
+                font-size: 1rem;
+                animation: slideinRight;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }
+        }
+    }
+    &__skills-division{
+        height: 85%;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+@media ( min-width: 300px){
+    .home{
+        &__title{
+            &__me{
+                &__name-coffee{
+                    &__name{
+                        font-size: 2rem;
+                    }
+                }
+            }
+            &__occupation{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+@media (min-width:600px){
+    .home{
+        &__title{
+            width: 80vw;
+            height: 30%;
+            &__me{
+                &__name-coffee{
+                    align-items: flex-end;
+                    &__name{
+
+                    }
+                    &__coffee{
+                        width: 10%;
+                        &__image{
+                            width: 100%;
+                            max-width: 80px;
+                        }
+                    }
+                }
+                &__name{
+                }
+                &__occupation{
+                    font-size: 2rem;
+                    align-self: center;
+                    width:80%;
+                }
+            }
+        }
+        &__skills-division{
+            width: 80vw;
+            height: 70%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            
+        }
+    }
+}
+@media (min-width: 601px) and (max-width: 1200px){
+    .home{    
+        &__title{
+            &__me{
+                    &__name-coffee{
+                        &__name{
+                            font-size: 3rem;
+                        }
+                        &__coffee{
+                            &__image{
+                                width: 100%;
+                                max-width: 60px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}
+@media (min-width:1201px){
+    .home{
+        &__title{
+            &__me{
+                &__name-coffee{
+                    &__name{
+                        font-size: 5rem;
+                    }
+                }
+                &__occupation{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 2000px){
+    .home{
+        &__title{
+            max-width: 80rem;
+        }
+        &__skills-division{
+            max-width: 80rem;
+            max-height: 80rem;
+        }
+    }
+}
+
+
+.react{
+    animation: tourne 7s infinite alternate-reverse;
+}
+.langue1{
+    animation: listSlide 3s ease;
+}
+.langue2{
+    animation: listSlide 4s ease;
+}
+.langue3{
+    animation: listSlide 5s ease;
+}
+.soft1{
+    animation: listSlide 3s ease;
+}
+.soft2{
+    animation: listSlide 4s ease;
+}
+.soft3{
+    animation: listSlide 5s ease;
+}
+.soft4{
+    animation: listSlide 5500ms ease;
+}

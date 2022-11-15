@@ -1,0 +1,108 @@
+
+html{
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    scroll-behavior: smooth;    
+    font-family:  'DM Serif Text', serif;
+    
+}
+body[data-nav="true"] > main{
+    transform: translateY(-100%);
+}
+
+body[data-nav="true"] > nav > .navBar__list{
+    transform: translateY(0%) scale(1);
+}
+
+@media (min-width: 600px){
+    body[data-nav="true"] > main{
+        transform: translateY(-50%);
+    }
+}
+
+.mainContent{
+    background-color: $background-black;
+    color: #D8D8D8;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 300vw;
+    height: 100vh;
+    transition: transform 500ms cubic-bezier(.13,.53,.38,.97);
+    &__section{
+        overflow: hidden;
+        width: 100vw;
+        height: 85%;
+    }
+}
+.title{
+    font-size: 3rem;
+    font-family:  'DM Serif Text', serif;
+    color: $orange-color;
+    text-transform: uppercase;
+}
+@media (min-width: 300px){
+    .title{
+        font-size: 4rem;
+    }
+}
+@media (min-width: 650px ) and (max-width: 1300px){
+    .title{
+        font-size: 4rem;
+    }
+}
+.sub-title{
+    font-family:  'DM Serif Text', serif;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    color: $blue-color;
+}
+@media (min-width: 1401px){
+    .sub-title{
+        font-size: 2.2rem;
+    }
+}
+@media (min-width: 650px) and (max-width: 1400px){
+    .sub-title{
+        font-size: 1.5rem;
+    }
+}
+.text{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: .75rem;
+    color: $white-color;
+    line-height: 1.1rem;
+}
+@media (min-width: 300px){
+    .text{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 650px ) and (max-width: 1400px){
+    .text{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+}
+@media (min-width: 651px) and (max-width: 870px){
+    .text{
+       font-size: 1rem;
+       line-height: 1.1rem; 
+    }
+}
+@media (min-width: 1401px){
+    .text{
+        line-height: 1.6rem;
+        font-size: 1.5rem;
+
+    }
+}
+.link{
+    text-decoration: none;
+    color: $blue-color;
+}

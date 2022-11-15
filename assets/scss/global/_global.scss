@@ -1,29 +1,15 @@
 
 html{
-    scroll-behavior: smooth;
     overflow: hidden;
 }
 body{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    scroll-behavior: smooth;    
     font-family:  'DM Serif Text', serif;
     
 }
-body[data-nav="true"] > main{
-    transform: translateY(-100%);
-}
 
-body[data-nav="true"] > nav > .navBar__list{
-    transform: translateY(0%) scale(1);
-}
-
-@media (min-width: 600px){
-    body[data-nav="true"] > main{
-        transform: translateY(-50%);
-    }
-}
 
 .mainContent{
     background-color: $background-black;

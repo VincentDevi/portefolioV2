@@ -51,8 +51,8 @@
         justify-content: space-around;
         align-items: center;
         transform: translateY(70%) scale(0.9);
-        transition: transform 500ms cubic-bezier(.13,.53,.38,.97);
         &__item{
+            cursor: pointer;
             height: 33%;
             width: 75%;
             text-decoration: none;

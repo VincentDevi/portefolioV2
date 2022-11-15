@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Permanent+Marker&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Source+Sans+Pro&display=swap" rel="stylesheet">     <link rel="stylesheet" href="assets/style.css">
-    <script defer src="assets/script/index.js"></script>
+    <script defer type="module" src="index.js"></script>
     <title>Portefolio Vincent Devilers</title>
 </head>
 
@@ -135,7 +135,7 @@
                     <h2 id="project-title" class="title intro__title">Projects</h2>
                     <p class="text intro__text">Down there, you will find a list and a description of all my projects</p>
 
-                    <a id="arrow" href="#my-work">
+                    <div id="arrow">
                         <div class="intro__arrow">
                             <div class="intro__arrow__vertical"></div>
                                 <div class="intro__arrow__impact">
@@ -143,7 +143,7 @@
                                     <div class="intro__arrow__right"></div>
                                 </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="my-work" id="my-work">
@@ -321,7 +321,7 @@
 
     </main>
 <!--Toggle Button to show and hide navBar-->
-    <button class="nav-toggle" onclick="toggleNav()">
+    <button id="button" class="nav-toggle">
         <img src="assets/icons/interface-utilisateur.png" class="nav-toggle__icon nav-toggle__menu" alt="Menu">
         <!-- <img src="/assets/icons/x.png" class="nav-toggle__icon nav-toggle__close" alt="Close"> -->
     </button>
@@ -330,18 +330,18 @@
     <nav class="navBar">
         <div class="navBar__list">
             
-            <a href="#home" class="navBar__list__item" onclick="toggleNav()">
+            <div id="homeNav" class="navBar__list__item">
                 <h3 class="navBar__list__item__title">About me</h3>
                 <img src="assets/images/home.png" class="navBar__list__img" alt="Who am I ?" >
-            </a>
-            <a href="#projects" class="navBar__list__item" onclick="toggleNav()">
+            </div>
+            <div id="projectNav" class="navBar__list__item">
                 <h3 class="navBar__list__item__title">Projects</h3>
                 <img src="assets/images/projects.png" class="navBar__list__img" alt="Projects" >
-            </a>
-            <a href="#contacts" class="navBar__list__item" onclick="toggleNav(), contactClicked()">
-                <h3 class="navBar__list__item__title">Contacts</h3>
+            </div>
+            <div id="contactNav" class="navBar__list__item">
+                <h3  class="navBar__list__item__title">Contacts</h3>
                 <img src="assets/images/contact.png" class="navBar__list__img" alt="Contacts" >
-            </a>
+            </div>
         </div>
     </nav>
 <!--End of the NavBar-->      
